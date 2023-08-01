@@ -1,0 +1,9 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "cmd": "browserify ./economyshopgui/script.js > bundle.js"
+            }
+        ]
+    }
+}

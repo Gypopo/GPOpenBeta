@@ -1,0 +1,13 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "cmd": "browserify ./economyshopgui/script.js > bundle.js"
+            },
+            {
+                "match": ".*",
+                "cmd": "echo 'I run for all files.'"
+            }
+        ]
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Caprasimo|Kanit:wght@300&display=swap">
+    <title>Open beta</title>
+    <style>
+
+        .header {
+            position: relative;
+            background: linear-gradient(90deg, rgba(107,120,255,1) 0%, rgba(57,76,255,1) 50%, rgba(0,0,0,1) 100%);
+            height: 30%;
+        }
+
+        .page {
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            margin: auto;
+            transform: translate(-50%, -50%);
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .welcome {
+            color: aliceblue;
+        }
+
+        .buttons {
+
+        }
+
+        .button {
+            background-color: #008abc; /* Green */
+            border: black;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px 0px rgba(222, 222, 222, 0.125);
+            transition: 0.5s;
+            font-family: Caprasimo;
+        }
+
+        .button:hover {
+            box-shadow: 4px 8px 16px 4px rgba(222, 222, 222, 0.296);
+        }
+
+        .versions {
+            position: fixed;
+            display: inline-block;
+        }
+
+    </style>
+    <body style="background-color:#252525"> 
+        <div class="header">
+
+        </div>
+
+        <div class="page">
+        <div class="center">
+            <div class="welcome">
+                <h1>Wecome to the open beta program!</h1>
+                <h2>Here you can find all beta releases for EconomyShopGUI:</h2>
+            </div>
+            <div class="buttons">
+                <div class="button">EconomyShopGUI</div>
+            </div>
+            <div class="versions">
+                <div>1.0</div>
+                <div>1.1</div>
+            </div>
+        </div>
+        </div>
+  
+        <script src="script.js"></script>
+    </body>
+</html>

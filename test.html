@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beta Releases</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .version-card {
+      position: relative;
+      padding: 20px;
+      border-radius: 4px;
+      background-color: #f1f1f1;
+      margin-bottom: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .version-card:hover {
+      background-color: #e1e1e1;
+    }
+
+    .version-number {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .version-details {
+      display: flex;
+      align-items: center;
+    }
+
+    .release-date {
+      color: #777;
+      margin-left: 20px;
+    }
+
+    .beta-badge {
+      display: inline-block;
+      background-color: #ff9800;
+      color: #fff;
+      padding: 4px 8px;
+      font-size: 12px;
+      border-radius: 4px;
+    }
+
+    .version-arrow {
+      color: #777;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      right: 40px;
+      transform: translateY(-50%) rotate(0deg);
+      transition: transform 0.3s;
+    }
+
+    .version-card:hover .version-arrow {
+      transform: translateY(-50%) rotate(90deg);
+    }
+
+    .changelog {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 1s;
+      margin-top: 10px;
+    }
+
+    .version-card:hover .changelog {
+      max-height: 500px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Beta Releases</h1>
+  </header>
+
+  <div class="container">
+    <div class="version-card">
+      <div class="version-details">
+        <span class="version-number">Version 1.0.0</span>
+        <span class="beta-badge">Beta</span>
+      </div>
+      <span class="release-date">Released on July 15, 2023</span>
+      <div class="version-arrow">&#xbb;</div>
+      <div class="changelog">
+        <p>Changelog for Version 1.0.0:</p>
+        <ul>
+          <li>Added new feature X</li>
+          <li>Fixed bug Y</li>
+          <li>Improved performance</li>
+        </ul>
+      </div>
+    </div>
+    <div class="version-card">
+      <div class="version-details">
+        <span class="version-number">Version 0.9.0</span>
+        <span class="beta-badge">Beta</span>
+      </div>
+      <span class="release-date">Released on June 30, 2023</span>
+      <div class="version-arrow">&#xbb;</div>
+      <div class="changelog">
+        <p>Changelog for Version 0.9.0:</p>
+        <ul>
+          <li>Added new feature A</li>
+          <li>Fixed bug B</li>
+          <li>Improved user interface</li>
+        </ul>
+      </div>
+    </div>
+    <div class="version-card">
+      <div class="version-details">
+        <span class="version-number">Version 0.8.0</span>
+        <span class="beta-badge">Beta</span>
+      </div>
+      <span class="release-date">Released on June 15, 2023</span>
+      <div class="version-arrow">&#xbb;</div>
+      <div class="changelog">
+        <p>Changelog for Version 0.8.0:</p>
+        <ul>
+          <li>Added new feature M</li>
+          <li>Fixed bug N</li>
+          <li>Improved security</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
