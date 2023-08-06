@@ -4,11 +4,15 @@ export class Beta {
     * @param {string} version
     * @param {string} changelog
     * @param {string} releaseDate
+    * @param {long} fileSize
+    * @param {number} downloads
     */
-    constructor(version, changelog, releaseDate) {
+    constructor(version, changelog, releaseDate, fileSize, downloads) {
         this.version = version;
         this.changelog = changelog.replace(/\\u0020/g,' ').split("\\n");
         this.releaseDate = releaseDate;
+        this.fileSize = fileSize;
+        this.downloads = downloads;
     }
 
     /**
@@ -26,9 +30,23 @@ export class Beta {
     }
 
     /**
-     * @returns {number}
+     * @returns {string}
      */
     getReleaseDate() {
         return this.releaseDate;
+    }
+
+    /**
+     * @returns {long}
+     */
+    getFileSize() {
+        return this.fileSize;
+    }
+
+    /**
+     * @returns {number}
+     */
+    getDownloads() {
+        return this.downloads;
     }
 }

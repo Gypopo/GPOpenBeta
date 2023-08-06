@@ -16,7 +16,7 @@ export class API {
         var raw = await response.text();
         var values = JSON.parse(raw);
         var list = values.map(function(x) {
-          return new Beta(x.version, x.changelog, x.releaseDate);
+          return new Beta(x.version, x.changelog, x.releaseDate, x.fileSize, x.downloads);
         })
       
         return list;

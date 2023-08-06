@@ -130,11 +130,17 @@ function getVersionTile(beta, pl) {
       
     }
 
-    // Release date
+    // Version info
     var rd = document.createElement('span');
     rd.className = 'release-date';
-    rd.innerHTML = 'Release date: ' + beta.releaseDate;
+    rd.innerHTML = 'Release date: ' + beta.releaseDate
     tile.appendChild(rd);
+
+    // Download count
+    var dl = document.createElement('span');
+    dl.className = 'downloads';
+    dl.innerHTML = 'Downloads: ' + beta.downloads;
+    tile.appendChild(dl);
 
     // Version arror
     var va = document.createElement('div');
